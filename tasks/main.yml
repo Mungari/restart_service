@@ -6,3 +6,4 @@
   service:
     name: "{{ service_name }}"
     state:  restarted
+    use: "init.d"
