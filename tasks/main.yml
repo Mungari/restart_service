@@ -1,5 +1,8 @@
 ---
+- name: "Debug init"
+  debug:
+    msg: "{{ ansible_service_mgr }}"
 - name: "restart service {{ service_name }}"
   service:
     name: "{{ service_name }}"
-    status:  restarted
+    state:  restarted
